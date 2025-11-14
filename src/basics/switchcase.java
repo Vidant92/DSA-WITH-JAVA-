@@ -1,4 +1,4 @@
-package day1;
+package basics;
 enum PRODUCTS {
     PIZZA, BURGER, DRINKS, DESSERTS
 }

@@ -1,4 +1,4 @@
-package day1;
+package basics;
 //count prime krna h leetcode
 // chech prime by optimatation approach also
 public class checkprime {

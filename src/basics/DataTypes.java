@@ -1,4 +1,4 @@
-package day1;
+package basics;
 public class DataTypes {
     int h; // instance variable- object creation time init
     static int h2; // class variable - class load time init

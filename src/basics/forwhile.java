@@ -1,4 +1,4 @@
-package day1;
+package basics;
 
 public class forwhile {
     public static void main(String[] args) {

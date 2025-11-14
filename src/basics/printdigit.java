@@ -1,4 +1,4 @@
-package day1;
+package basics;
 // 1 se 5 tk print krna h in order 1 2 3 4 5
 public class printdigit {
     public static void main(String[] args) {

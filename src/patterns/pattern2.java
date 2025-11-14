@@ -1,4 +1,4 @@
-package day1.patterns;
+package patterns;
 //    *
 //   **
 //  ***
@@ -6,6 +6,6 @@ package day1.patterns;
 //*****
 public class pattern2 {
     public static void main(String[] args) {
-        System.out.println("hello");
+
     }
 }

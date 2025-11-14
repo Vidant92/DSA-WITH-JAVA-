@@ -1,4 +1,4 @@
-package day1;
+package basics;
 // n = 12345  rotate=2
 // ist  --- 51234
 // 2nd --45123 ans

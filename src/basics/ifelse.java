@@ -1,4 +1,4 @@
-package day1;
+package basics;
 import java.util.Scanner;
 // greatest of three
 
