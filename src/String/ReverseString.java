@@ -14,7 +14,7 @@ public class ReverseString {
     }
 
     public static void main(String[] args) {
-        String rev = reverse( " VIDANT");
+        String rev = reverse( " VIDANT92");
         System.out.println(rev);
     }
 }
