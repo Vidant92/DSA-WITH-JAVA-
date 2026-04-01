@@ -49,7 +49,7 @@ class MyStack{
 public class LLImplentationOfStack {
     public static void main(String[] args) throws Exception { // main m bhi lgana pdega throws exception to use this 
         MyStack st = new MyStack();
-        // st.pop();  we cant call it gives underflow error
+        // st.pop();  we cant call it gives underflow error and code will not work
         st.push(10); st.push(20); st.push(30); st.push(40);
         st.display();
 
