@@ -54,7 +54,7 @@ public class LLImplentationOfStack {
         st.display();
 
         st.pop();
-        //st.pop();
+        //st.pop(); //
         st.display();
     }
 }
