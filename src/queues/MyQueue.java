@@ -6,6 +6,7 @@ class Node{
         this.val = val;
     }
 }
+// I made main function in LLImplementationOfQueue
 public class MyQueue {
     Node head;
     Node tail;
