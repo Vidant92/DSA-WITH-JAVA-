@@ -1,0 +1,28 @@
+class Solution {
+    public boolean hasAllCodes(String s, int k) {
+
+        if (s.length() - k + 1 < (1 << k))
+            return false;
+
+        HashSet<String> set = new HashSet<>();
+
+        int low = 0;
+        int high = 0;
+
+        while (high < s.length()) {
+
+            if (high - low + 1 < k) {
+                high++;
+            } 
+            else if (high - low + 1 == k) {
+
+                set.add(s.substring(low, high + 1));
+
+                low++;
+                high++;
+            }
+        }
+
+        return set.size() == (1 << k);
+    }
+}
