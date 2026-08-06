@@ -1,0 +1,17 @@
+class Solution {
+    public int smallestNumber(int n, int t){
+       while(product(n) % t !=0){
+        n++;
+       }
+       return n;
+    }
+    private int product(int num){
+        int mul =1;
+        while(num >0){
+           int last = num %10;
+           mul = mul * last;
+           num = num/10;
+        }
+    return mul;
+    }
+}
