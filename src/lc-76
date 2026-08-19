@@ -1,0 +1,52 @@
+class Solution {
+    public String minWindow(String s, String t) {
+        int n = s.length();
+        int m = t.length();
+        if(n < m){
+            return "";
+        }
+        int[] freq = new int[128];
+        int[] window = new int[128];
+
+        // t ki frequency
+        for(int i = 0; i < m; i++){
+            freq[t.charAt(i)]++;
+        }
+        int low = 0;
+        int high = 0;
+
+        int minLen = Integer.MAX_VALUE;
+        int start = -1;
+        
+        for(high = 0; high<n; high++){
+            window[s.charAt(high)]++;
+            while(isValid(window, freq)){
+
+                int len = high - low + 1;
+
+                if(len < minLen){
+                    minLen = len;
+                    start = low;  // START k use substring k liye kr rhe h wrna strinhbuilder bnana pdega 
+                }
+                window[s.charAt(low)]--;
+                low++;
+            }
+        }
+
+        if(minLen == Integer.MAX_VALUE){
+            return "";
+        }
+
+        return s.substring(start, start + minLen);
+    }
+
+
+    public boolean isValid(int[] window, int[] freq){
+        for(int i = 0; i < 128; i++){
+             if(window[i] < freq[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+}
