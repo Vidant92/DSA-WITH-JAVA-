@@ -1,0 +1,15 @@
+class Solution{
+    public int minBishopMoves(int[] source,int[] target){
+        int a=source[0];
+        int b=source[1];
+        int c=target[0];
+        int d=target[1];
+        if((a+b)%2!=(c+d)%2){
+            return -1;
+        }
+        if(Math.abs(a-c)==Math.abs(b-d)){
+            return 1;
+        }
+        return 2;
+    }
+}
