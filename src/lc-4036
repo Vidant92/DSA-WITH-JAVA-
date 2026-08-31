@@ -1,0 +1,31 @@
+class Solution{
+    public String[] largestString(int[] nums){
+        int n=nums.length;
+        String[] ans=new String[n];
+
+        for(int i=0;i<n;i++){
+            int x=nums[i];
+            String s="";
+            
+            int z=x/(1<<25);
+
+            for(int j=0;j<z;j++){
+                s+="z";
+            }
+
+            x=x%(1<<25);
+            
+            for(int j=24;j>=0;j--){
+                int p=1<<j;
+
+                if(x>=p){
+                    s+=(char)('a'+j);
+                    x-=p;
+                }
+            }
+
+            ans[i]=s;
+        }
+        return ans;
+    }
+}
